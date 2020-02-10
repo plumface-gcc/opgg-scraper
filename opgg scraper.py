@@ -1,4 +1,3 @@
-from progress.bar import ChargingBar
 from lxml import html
 import requests, sys, locale, os, codecs, time
 
