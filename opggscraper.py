@@ -2,18 +2,18 @@ from lxml import html
 import requests, sys, locale, os, codecs, time
 
 opggUrl = "https://na.op.gg/ranking/ajax2/ladders/start=" #where to start from
-names_x2 = list() #storing all data in a list
+names_x2 = list() #storing all data here
 myInput = int(input("What ladder rank do you want to start on?: "))
 myInput2 = int(input("How many accounts do you want to parse?: "))
 
 for j in range(myInput, myInput + myInput2, 50):
     for i in [myInput]:
-        destinationUrl = opggUrl + str(j) 
+        destinationUrl = opggUrl + str(i)
         page = requests.get(destinationUrl)
         tree = html.fromstring(page.content) #grabbing page html
-        names_x1 = tree.xpath('//a[not(@target) and not(@onclick)]/text()') #getting the xpath of a specific part of the page 
-        names_x2.extend(names_x1)
-        print("At position: ", [j])
+        names_x1 = tree.xpath('//a[not(@target) and not(@onclick)]/text()') #grabbing specific html content, this being the username
+        names_x2.extend(names_x1) #adding on to our list
+        print("At position: ", [j], "\n")
 
 with open("scrape.txt", "w", encoding="cp65001") as f:
     for item in names_x2:
