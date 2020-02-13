@@ -1,2 +1,2 @@
-# a efficient and concise opgg scraper
-# built using python with requests and lxml
+# A efficient and concise opgg scraper
+# Built using python with requests and lxml
