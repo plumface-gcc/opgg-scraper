@@ -1,7 +1,7 @@
 # OP-GG Scraper
 A efficient and concise web scraper, capable of scraping a thousand names every couple seconds.
 
-# Prerequisits 
+# Prerequisites 
 ## Libraries
 In python command line, pass in these commands: *(assuming you have pip installed, and python is installed to PATH.)* 
 1. pip install requests
