@@ -7,7 +7,7 @@ In python command line, pass in these commands: *(assuming you have pip installe
 1. pip install requests
 2. pip install lxml
 
-#How to use
+# How to use
 ## Running the scraper
 1. Download the files from this repository and put them into a folder
 2. Double click on opggscraper
@@ -23,6 +23,6 @@ In python command line, pass in these commands: *(assuming you have pip installe
 5. Python will then combo the passwords onto our scrape.txt
 6. Profit!
 
-#Todo
+# Todo
 - Make password input however many passwords the user wants to combo to.
 - Make scraper more efficient with lxml optimizations. 
