@@ -9,7 +9,7 @@ while True:
         myInput = int(input("What ladder rank do you want to start on?: "))
         myInput2 = int(input("How many accounts do you want to parse?: "))
 
-    except ValueError:
+    except ValueError: # raise valueerror
         print("Please enter an integer.", "\n")
         time.sleep(2)
         continue
